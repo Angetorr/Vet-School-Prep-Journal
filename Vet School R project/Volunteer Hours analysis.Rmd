@@ -1,0 +1,34 @@
+---
+title: "Vet school volunteer hours"
+output: html_document
+date: "2025-10-31"
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(janitor)
+library(readxl)
+
+```
+
+
+```{r setup, include=FALSE}
+Volunteer_hours<- read.csv("C:/Users/angie/OneDrive/Vet School/Volunteer Vet Hours Log.csv")
+
+```
+
+
+```{r}
+total_hours<- sum(Volunteer_hours$Total.Hours)
+avg_hours<- mean(Volunteer_hours$Total.Hours)
+```
+
+```{r}
+ggplot(Volunteer_hours, aes(Date, Total.Hours, colour = Start.Time))+
+  geom_line()+
+  geom_point()+
+  labs(title = "Volunteer hours by date", x = "Date", y= "Hours Worked")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
