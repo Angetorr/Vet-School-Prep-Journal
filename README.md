@@ -4,8 +4,6 @@ Welcome to my vet school prep journal! This repository is where I keep track of 
 
 ## What’s Inside
 
-- Notes from classes, workshops, and clinical experiences  
-- Reflections on what I’m learning and observing  
 - Logs of volunteer or work hours  
 - Resources and tips I find helpful  
 
